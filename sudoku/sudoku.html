@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sudoku</title>
+
+    <link
+        rel="stylesheet"
+        href="sudoku.css"
+    >
+
+</head>
+
+<body>
+
+    <main class="sudoku-container">
+
+        <header class="sudoku-header">
+
+            <h1>🧩 Sudoku</h1>
+
+            <p>Completa el tablero sin repetir números.</p>
+
+        </header>
+
+
+        <!-- INFORMACIÓN DEL JUEGO -->
+
+        <section class="sudoku-info">
+
+            <div class="info-item">
+
+                <span>⏱️</span>
+
+                <strong id="tiempo">
+                    00:00
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>❌</span>
+
+                <strong id="errores">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>💡</span>
+
+                <strong id="pistas">
+                    3
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIFICULTAD -->
+
+        <section class="dificultad">
+
+            <button
+                class="dificultad-btn activo"
+                data-dificultad="facil"
+            >
+                Fácil
+            </button>
+
+            <button
+                class="dificultad-btn"
+                data-dificultad="medio"
+            >
+                Medio
+            </button>
+
+            <button
+                class="dificultad-btn"
+                data-dificultad="dificil"
+            >
+                Difícil
+            </button>
+
+        </section>
+
+
+        <!-- TABLERO -->
+
+        <section class="tablero-container">
+
+            <div
+                id="tablero"
+                class="tablero"
+            >
+
+                <!-- Las 81 casillas serán creadas
+                     mediante JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- NÚMEROS -->
+
+        <section class="numeros">
+
+            <button class="numero-btn" data-numero="1">
+                1
+            </button>
+
+            <button class="numero-btn" data-numero="2">
+                2
+            </button>
+
+            <button class="numero-btn" data-numero="3">
+                3
+            </button>
+
+            <button class="numero-btn" data-numero="4">
+                4
+            </button>
+
+            <button class="numero-btn" data-numero="5">
+                5
+            </button>
+
+            <button class="numero-btn" data-numero="6">
+                6
+            </button>
+
+            <button class="numero-btn" data-numero="7">
+                7
+            </button>
+
+            <button class="numero-btn" data-numero="8">
+                8
+            </button>
+
+            <button class="numero-btn" data-numero="9">
+                9
+            </button>
+
+        </section>
+
+
+        <!-- ACCIONES -->
+
+        <section class="acciones">
+
+            <button id="nuevaPartida">
+                🔄 Nueva partida
+            </button>
+
+            <button id="pista">
+                💡 Pista
+            </button>
+
+            <button id="borrar">
+                🗑️ Borrar
+            </button>
+
+        </section>
+
+
+        <!-- MENSAJE -->
+
+        <div
+            id="mensaje"
+            class="mensaje"
+        ></div>
+
+
+        <!-- REGRESAR -->
+
+        <a
+            href="index.html"
+            class="volver"
+        >
+            ← Volver al Menú Principal
+        </a>
+
+    </main>
+
+
+    <script src="sudoku.js"></script>
+
+</body>
+
+</html>
