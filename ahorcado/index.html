@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -14,126 +9,286 @@
 
 </head>
 
+
 <body>
+
 
 <div class="contenedor">
 
-    <header>
 
-        <h1>🎯 AHORCADO</h1>
+<header>
 
-        <a href="../index.html" class="volver">
-            ← Menú Principal
-        </a>
+    <h1>🎯 AHORCADO</h1>
 
-    </header>
 
-    <div class="panel">
+    <a href="../index.html" class="volver">
+        ← Menú Principal
+    </a>
 
-        <div class="izquierda">
 
-            <canvas id="canvas"
-                    width="300"
-                    height="350">
-            </canvas>
+</header>
 
-        </div>
 
-        <div class="derecha">
-<div class="estadisticas">
 
-    <div class="dato">
-        🏆 Ganadas:
-        <span id="ganadas">0</span>
+<div class="panel">
+
+
+    <!-- CANVAS DEL AHORCADO -->
+
+    <div class="izquierda">
+
+
+        <canvas id="canvas"
+                width="300"
+                height="350">
+        </canvas>
+
+
     </div>
 
-    <div class="dato">
-        💀 Perdidas:
-        <span id="perdidas">0</span>
-    </div>
 
-    <div class="dato">
-    ⭐ Puntos:
-    <span id="puntos">0</span>
-    </div>
 
-    <div class="dato">
-        🔥 Racha:
-        <span id="racha">0</span>
-    </div>
 
-</div>
 
-<div class="controles">
+    <!-- INFORMACIÓN DEL JUEGO -->
 
-    <select id="dificultad">
+    <div class="derecha">
 
-        <option value="facil">Fácil</option>
-        <option value="medio">Medio</option>
-        <option value="dificil">Difícil</option>
 
-    </select>
 
-    <button id="pista">
-        💡 Pista
-    </button>
+        <div class="estadisticas">
 
-</div>
-            <div class="categoria">
 
-                Categoría:
-                <span id="categoria">
-                    ---
+            <div class="dato">
+
+                🏆 Ganadas:
+                <span id="ganadas">
+                    0
                 </span>
 
             </div>
 
-            <div id="pistaTexto" class="pista-texto"></div>
 
-            <div id="palabra"
-                 class="palabra">
+
+            <div class="dato">
+
+                💀 Perdidas:
+                <span id="perdidas">
+                    0
+                </span>
+
+            </div>
+
+
+
+            <div class="dato">
+
+                ⭐ Puntos:
+                <span id="puntos">
+                    0
+                </span>
 
             </div>
 
-            <div class="contenedor-vidas">
 
-    <div id="vidas" class="vidas">
 
-        ❤️❤️❤️❤️❤️❤️
+            <div class="dato">
 
-    </div>
-
-    <div class="barra">
-
-        <div id="progreso" class="progreso"></div>
-
-    </div>
-
-</div>
-
-            <div id="mensaje"
-                 class="mensaje">
+                🔥 Racha:
+                <span id="racha">
+                    0
+                </span>
 
             </div>
+
+
 
         </div>
 
+
+
+
+
+        <div class="controles">
+
+
+            <select id="dificultad">
+
+
+                <option value="facil">
+                    Fácil
+                </option>
+
+
+                <option value="medio">
+                    Medio
+                </option>
+
+
+                <option value="dificil">
+                    Difícil
+                </option>
+
+
+            </select>
+
+
+
+
+            <button id="pista">
+
+                💡 Pista
+
+            </button>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="categoria">
+
+
+            Categoría:
+
+            <span id="categoria">
+
+                ---
+
+            </span>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div id="pistaTexto"
+             class="pista-texto">
+
+        </div>
+
+
+
+
+
+
+
+
+        <div id="palabra"
+             class="palabra">
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="contenedor-vidas">
+
+
+
+            <div id="vidas"
+                 class="vidas">
+
+                ❤️❤️❤️❤️❤️❤️
+
+            </div>
+
+
+
+
+            <div class="barra">
+
+
+                <div id="progreso"
+                     class="progreso">
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div id="mensaje"
+             class="mensaje">
+
+        </div>
+
+
+
+
     </div>
 
-    <div id="teclado"
-         class="teclado">
 
-    </div>
-
-    <button id="nuevo">
-        Nueva partida
-    </button>
-
-    <button id="desconectar">
-    🚪 Desconectarse
-    </button>
 
 </div>
+
+
+
+
+
+
+
+<!-- TECLADO -->
+
+<div id="teclado"
+     class="teclado">
+
+</div>
+
+
+
+
+
+
+
+<!-- BOTONES -->
+
+<div class="botones-finales">
+
+
+    <button id="nuevo">
+
+        Nueva partida
+
+    </button>
+
+
+
+    <button id="desconectar">
+
+        🚪 Desconectarse
+
+    </button>
+
+
+</div>
+
+
+
+
+
+</div>
+
 
 <script src="js/palabras.js"></script>
 <script src="js/dibujo.js"></script>
