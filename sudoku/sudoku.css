@@ -435,3 +435,43 @@ body {
     color: #16803c;
 
 }
+
+/* ==========================================
+   INSTRUCCIONES SUDOKU
+   ========================================== */
+
+.instrucciones-sudoku {
+
+    background: rgba(255,255,255,0.12);
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    text-align: left;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+}
+
+
+.instrucciones-sudoku h3 {
+
+    text-align: center;
+
+    margin-bottom: 12px;
+
+}
+
+
+.instrucciones-sudoku p {
+
+    margin-bottom: 10px;
+
+}
